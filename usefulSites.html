@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/code.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Start Coding</title>
+</head>
+
+<body>
+    <header>
+        <h1>Start Coding</h1>
+        <p>Your guide to start coding</p>
+    </header>
+    <ul id="navBar">
+        <li><a href="./index.html">Get Started</a></li>
+        <li><a href=#">Usefull Sites</a></li>
+    </ul>
+    <div id="content">
+        <div id="imgSite">
+            <input type="image" data-url="https://stackoverflow.com/" class="imgBu" src="./images/sov.png" width="200"
+                alt="">
+            <input type="image" data-url="https://github.com/" class="imgBu" src="./images/gh.png" width="200" alt="">
+            <input type="image" data-url="https://www.w3schools.com/" class="imgBu" src="./images/w3.jpg" width="200"
+                alt="">
+
+        </div>
+        <button onclick="window.open('https://www.hongkiat.com/blog/programming-questions-websites/')">More
+            Sites</button>
+    </div>
+
+    <footer>
+        <div>
+            <p>Site Map:</p>
+            <ul>
+                <li><a href="./index.html">Get Started</a></li>
+                <li><a href="#">Usefull Sites</a></li>
+            </ul>
+        </div>
+        <p>
+            contant us:
+            <a href="mailto://khalilwarwar2@gmail.com">khalilwarwar2@gmail.com</a>
+        </p>
+    </footer>
+    <script>
+        let imgsBu = document.getElementById('imgSite').children
+        for (let element of imgsBu) {
+            element.addEventListener('click', () => {
+                window.open(element.dataset.url)
+            })
+        }
+    </script>
+</body>
+
+</html>
