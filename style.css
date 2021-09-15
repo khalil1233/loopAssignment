@@ -91,3 +91,16 @@ header > p {
 #navBar > li:hover {
   background-color: rgb(55, 58, 61);
 }
+
+#msBu{
+  background-color: slategray;
+  border-style: solid;
+  border-width: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#msBu:active{
+  background-color: rgb(96, 108, 119);
+}
